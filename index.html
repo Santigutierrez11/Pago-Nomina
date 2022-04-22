@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Nómina</title>
+</head>
+<body>
+    <main>
+        <section class="contenedor">
+            <center>
+                <h1>Pago Nómina</h1>
+                <p>Ingrese el numero de su cargo:</p>
+            </center>
+            <ul>
+                <li>1 => Auxiliar</li>
+                <li>2 => Operador</li>
+                <li>3 => Supervisor</li>
+            </ul>
+            <center>
+                <table>
+                    <form action="logica.php" method="post">
+                        <tr>
+                            <label for="cargo">
+                                <td><span>Cargo</span></td>
+                                <td><input type="number" name="cargo" class="input" placeholder="1, 2 ó 3"></td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <label for="dias">
+                                <td><span>N° Días</span></td>
+                                <td><input type="number" name="dias" class="input" placeholder="Numero días trabajados"></td>
+                            </label>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="enviar"></td>
+                        </tr>
+                    </form>
+                </table>
+            </center>
+        </section>
+    </main>
+</body>
+</html>
